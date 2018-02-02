@@ -1,0 +1,30 @@
+.boxes-container {
+  align-items: center;
+  background-image: url('bagels.jpg');
+  background-size: 100% auto;
+  display: flex;
+  justify-content: space-around;
+  height: 30rem;
+}
+
+.boxes {
+  background-color: pink;
+  color: white;
+  display: flex;
+  height: 8rem;
+  margin: auto;
+  text-align: center;
+  width: 14rem;
+}
+
+.boxes-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.landing-page-links {
+  margin-top: 0;
+  color: white;
+}
