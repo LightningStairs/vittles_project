@@ -3,22 +3,11 @@
     CookBooks Soon
   <% else %>
     <div class="row">
-      <div class="small-6 columns">
+      <div class="small-12 columns">
         <div class="boxes">
           <p class="boxes-text">
-            Need to <%= link_to 'Sign Up', new_user_registration_path, class: "landing-page-links"%>?
+            Start building your household cookbook! <br/> <%= link_to 'Join Vittles Today', new_user_registration_path, class: "landing-page-links"%> 
           </p>
-        </div>
-      </div>
-      <div class="small-6 columns">
-        <div class="boxes">
-          <div class="boxes-text">
-            <p>
-              Already have an account?
-            </p>
-            <p id="landing-page-p"> <%= link_to 'Sign In', new_user_session_path, class: "landing-page-links"%>
-            </p>
-          </div>
         </div>
       </div>
     </div>
