@@ -1,23 +1,20 @@
-body {
-  background-image: url('bagels.jpg');
-}
-
 .boxes-container {
   align-items: center;
+  background-image: url('bagels.jpg');
+  background-size: 100% auto;
   display: flex;
   justify-content: space-around;
+  height: 30rem;
 }
 
 .boxes {
+  background-color: pink;
+  color: white;
   display: flex;
-  width: 128px;
-  height: 128px;
-  border-style: solid;
-  border-width: .5rem;
-  border-radius: .5rem;
-  border-color: #646464;
+  height: 8rem;
+  margin: auto;
   text-align: center;
-  color: black;
+  width: 14rem;
 }
 
 .boxes-text {
@@ -25,4 +22,9 @@ body {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+}
+
+.landing-page-links {
+  margin-top: 0;
+  color: white;
 }
