@@ -1,13 +1,18 @@
-<div class="row">
-    <% if @user %>
-      CookBooks Soon
-    <% else %>
+<div class="boxes-container">
+  <% if @user %>
+    CookBooks Soon
+  <% else %>
+    <div class="row">
       <div class="small-6 columns boxes">
-        Need to <%= link_to 'Sign Up', new_user_registration_path %>?
+        <p class="boxes-text">
+          Need to <%= link_to 'Sign Up', new_user_registration_path %>?
+        </p>
       </div>
       <div class="small-6 columns boxes">
-        Already have an account? <%= link_to 'Sign In', new_user_session_path %>
+        <p class="boxes-text">
+          Already have an account? <%= link_to 'Sign In', new_user_session_path %>
+        </p>
       </div>
-    <% end %>
-
+    </div>
+  <% end %>
 </div>
