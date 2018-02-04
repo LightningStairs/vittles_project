@@ -1,12 +1,27 @@
 <div class="boxes-container">
   <% if @user %>
-    CookBooks Soon
+    <div class="row">
+      <div class="small-6 columns">
+        <div class="boxes">
+          <p class="boxes-text">
+           <br/> <%= link_to 'Your Cookbooks', user_cookbooks_path(@user), class: "landing-page-links"%>
+          </p>
+        </div>
+      </div>
+      <div class="small-6 columns">
+        <div class="boxes">
+          <p class="boxes-text">
+           <br/> <%= link_to 'Browse All Cookbooks', cookbooks_path, class: "landing-page-links"%>
+          </p>
+        </div>
+      </div>
+    </div>
   <% else %>
     <div class="row">
       <div class="small-12 columns">
         <div class="boxes">
           <p class="boxes-text">
-            Start building your household cookbook! <br/> <%= link_to 'Join Vittles Today', new_user_registration_path, class: "landing-page-links"%> 
+            Start building your household cookbook! <br/> <%= link_to 'Join Vittles Today', new_user_registration_path, class: "landing-page-links"%>
           </p>
         </div>
       </div>
