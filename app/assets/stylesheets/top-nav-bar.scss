@@ -5,10 +5,15 @@
   color: #333333;
 }
 #title-text {
+  background-color: #6AC1C4;
   color: #333333;
   font-family: 'Rammetto One', cursive;
 }
 
 #flash-top-bar {
   background-color: red;
+}
+
+.top-bar-section ul li > a {
+    font-family: 'Source Sans Pro', sans-serif;
 }

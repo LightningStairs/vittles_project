@@ -7,5 +7,5 @@ Rails.application.routes.draw do
     resources :cookbooks
   end
 
-  resources :cookbooks, only: [:index, :show] 
+  resources :cookbooks, except: [:destory] 
 end
