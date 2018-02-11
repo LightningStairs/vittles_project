@@ -9,14 +9,23 @@
   color: #333333;
   font-family: 'Rammetto One', cursive;
 }
-
 #flash-top-bar {
   background-color: red;
 }
-
 .top-bar-section ul li > a {
     font-family: 'Source Sans Pro', sans-serif;
 }
 .has-dropdown {
   text-align: center;
 }
+
+.top-bar-section .dropdown li {
+  background-color: #6AC1C4;
+}
+.top-bar-section .dropdown a{
+  color: #234041;
+  font-family: 'Rammetto One', cursive;
+}
+// .top-bar-section .dropdown li.parent-link a{
+//   visibility: collapse;
+// }

@@ -13,7 +13,7 @@ class CookbooksController < ApplicationController
     @cookbook = Cookbook.new(cookbook_params)
     if @cookbook.save
       join_cookbook(@user, @cookbook)
-      redirect_to @cookbook
+      redirect_to @user
     else
       render :new
     end
