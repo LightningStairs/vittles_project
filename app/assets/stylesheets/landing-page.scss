@@ -1,3 +1,4 @@
+
 .boxes-container {
   align-items: center;
   background-image: url('bagels.jpg');
@@ -15,6 +16,11 @@
   margin: auto;
   padding: auto 1rem;
   width: 70%;
+
+  @media screen and (max-width: 39.9375em) {
+    height: 8rem;
+    width: 70%;
+  }
 }
 
 .boxes-text {
@@ -24,6 +30,10 @@
   left: 50%;
   text-align: center;
   transform: translateX(-50%) translateY(-50%);
+
+  @media screen and (max-width: 39.9375em) {
+    font-size: 1rem;
+  }
 }
 
 .landing-page-links {

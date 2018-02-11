@@ -11,7 +11,6 @@ class CookbooksController < ApplicationController
   def create
     @user= current_user
     @cookbook = Cookbook.new(cookbook_params)
-    # binding.pry
     if @cookbook.save
       join_cookbook(@user, @cookbook)
       redirect_to @cookbook
@@ -23,7 +22,7 @@ class CookbooksController < ApplicationController
   def join_cookbook(user, cookbook)
     UserCookbook.create!(user_id: user.id, cookbook_id: cookbook.id)
   end
-  
+
   def cookbook_params
     params.require(:cookbook).permit(:title, :creator_id)
   end
