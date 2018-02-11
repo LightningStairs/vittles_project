@@ -26,6 +26,20 @@
   color: #234041;
   font-family: 'Rammetto One', cursive;
 }
-// .top-bar-section .dropdown li.parent-link a{
-//   visibility: collapse;
-// }
+.top-bar-section .dropdown li.parent-link {
+  height: 0rem;
+  margin: 0;
+}
+.top-bar-section .dropdown li.parent-link a{
+  visibility: hidden;
+  margin: -.3rem;
+}
+#home-mobile-link {
+  a:hover {
+    background-color: #222222;
+    color: #FFFFFF;
+    i{
+      color: #FFFFFF;
+    }
+  }
+}

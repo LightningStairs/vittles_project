@@ -13,12 +13,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <nav class="top-bar show-for-small-only" data-topbar role="navigation">
+  <nav class="top-bar show-for-small-only" data-topbar role="navigation" data-options="is_hover: false">
     <section class="top-bar-section">
       <ul>
         <li class="has-dropdown title-text">
           <a id="title-text" href="/">Vittles</a>
           <ul id="mobile-nav-dropdown" class="dropdown">
+            <li id="home-mobile-link"><a id="title-text" href="/">Home <i class="fas fa-utensils"></i></a></li>
             <% if current_user %>
               <li>
                 <%= link_to 'New Cookbook', new_cookbook_path %>
