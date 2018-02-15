@@ -1,6 +1,9 @@
-<%= form_for @cookbook do |f| %>
-  <%= f.label :title %>:
-  <%= f.text_field :title %><br />
-  <%= f.hidden_field :creator_id, :value => @user.id %>
-  <%= f.submit %>
-<% end %>
+<div class="row">
+  <div class="small-12 columns">
+    <%= form_for @cookbook do |f| %>
+      <%= f.label :title %><%= f.text_field :title %>
+      <%= f.hidden_field :creator_id, :value => @user.id %>
+      <%= f.submit class:'button', id: 'new_form_sumbit'%>
+    <% end %>
+  </div>
+</div>

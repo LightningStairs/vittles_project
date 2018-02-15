@@ -1,0 +1,16 @@
+#new_cookbook {
+  width: 70%;
+  margin: auto;
+  #new_form_sumbit{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #333333;
+  }
+  input{
+    height: 50px;
+    line-height: 80%;
+    font-size: 1.25rem;
+  }
+  label {
+    font-size: 2rem;
+  }
+}

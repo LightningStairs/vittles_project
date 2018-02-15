@@ -1,8 +1,17 @@
-<h1>
-  <%= @user.first_name %>
-</h1>
-<ul>
-  <% @cookbooks.each do |cookbook| %>
-    <li><%= cookbook.title%></li>
-  <% end %>
-</ul>
+<div class="user-nav-buttons-container">
+</div>
+<div class="user-show-container">
+  <h1 class="user-first-name">
+    <%= @user.first_name %>
+  </h1>
+  <h3 class="cookbooks-subheader">
+    Cookbooks You Contribute To
+  </h3>
+  <div class="user-cookbooks-container">
+    <ul>
+      <% @cookbooks_subscribed.each do |cookbook| %>
+        <li><%= cookbook.title%></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
