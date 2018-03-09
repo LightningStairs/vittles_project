@@ -1,5 +1,5 @@
 <ul>
   <% @cookbooks.each do |cookbook| %>
-    <li><%= cookbook.title%></li>
+    <li><%= link_to "#{cookbook.title}", cookbook_path(cookbook) %> - <%= cookbook.creator.full_name %></li>
   <% end %>
 </ul>
