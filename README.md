@@ -3,6 +3,8 @@ Vittles
 
 Vittles is a household cookbook app that allows users to store and build recipes and collaborate as they continue to fine tune them.
 
+Heroku Link: https://pure-coast-35610.herokuapp.com/
+
 Getting Started
 ------------------
 
