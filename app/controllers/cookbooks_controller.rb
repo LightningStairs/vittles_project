@@ -19,6 +19,10 @@ class CookbooksController < ApplicationController
     end
   end
 
+  def show
+    @cookbook= Cookbook.find(params[:id])
+  end
+
   def join_cookbook(user, cookbook)
     UserCookbook.create!(user_id: user.id, cookbook_id: cookbook.id)
   end

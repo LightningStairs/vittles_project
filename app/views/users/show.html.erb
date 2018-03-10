@@ -10,7 +10,7 @@
   <div class="user-cookbooks-container">
     <ul>
       <% @cookbooks_subscribed.each do |cookbook| %>
-        <li><%= cookbook.title%></li>
+        <li><%= link_to "#{cookbook.title}", cookbook_path(cookbook) %></li>
       <% end %>
     </ul>
   </div>
