@@ -21,6 +21,7 @@ class CookbooksController < ApplicationController
 
   def show
     @cookbook= Cookbook.find(params[:id])
+    @recipes= Recipe.where(cookbook_id: @cookbook)
   end
 
   def join_cookbook(user, cookbook)
